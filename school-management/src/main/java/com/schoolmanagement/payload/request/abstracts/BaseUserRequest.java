@@ -7,6 +7,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.SuperBuilder;
 
+import javax.persistence.Column;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
@@ -51,7 +52,7 @@ public  abstract class BaseUserRequest {
 
     @NotNull(message = "Please enter your password")
     @Size(min=8,max=60, message="Your password should be at least 8 chars")
-    private String password;
+    private String password; //
 
     @NotNull(message = "Please enter your phoneNumber")
     @Size(min=12,max=12, message="Your phoneNumber should be 12 chars long")

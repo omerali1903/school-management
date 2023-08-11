@@ -25,6 +25,7 @@ public class LessonProgram {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    // TODO : tam tarih gerekiyor ( yyyy:MM:dd )
     @Enumerated(EnumType.STRING)
     private Day day;
 

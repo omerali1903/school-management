@@ -52,5 +52,4 @@ public abstract class User {
     private Gender gender;
 
 
-
 }
